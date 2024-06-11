@@ -16,4 +16,8 @@ public class Prescription
     public Patient Patient { get; set; } = null!;
     [ForeignKey(nameof(IdDoctor))]
     public Doctor Doctor { get; set; } = null!;
+
+    public ICollection<PrescriptionMedicament> PrescriptionMedicaments { get; set; } = new HashSet<PrescriptionMedicament>();
+
+
 }

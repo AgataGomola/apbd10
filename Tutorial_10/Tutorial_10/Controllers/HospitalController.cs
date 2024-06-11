@@ -57,4 +57,11 @@ public class HospitalController : ControllerBase
             prescription.IdDoctor
         });
     }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> ShowPatient(int id)
+    {
+        var patient = await _prescriptionRepository.GetAllData(id);
+        return Ok(patient);
+    }
 }

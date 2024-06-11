@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using Tutorial_10.Models;
 
 namespace Tutorial_10.RequestModels;
 
